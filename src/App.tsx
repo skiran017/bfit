@@ -1,17 +1,19 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import { Box } from '@mui/material';
-import Home from './components/Home';
+import { Box } from '@mui/material'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
 
 function App() {
   return (
     <Box width="400px">
-      Navbar
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
     </Box>
-  );
+  )
 }
 
-export default App;
+export default App
