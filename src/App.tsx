@@ -1,3 +1,5 @@
+import './App.css'
+
 import { Box } from '@mui/material'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'

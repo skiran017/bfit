@@ -1,7 +1,15 @@
-import React from 'react';
+import { Box } from '@mui/material'
+import React, { useState } from 'react'
+
+import HeroBanner from '../components/HeroBanner'
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <Box>
+      <HeroBanner />
+      SearchExercises Exercises
+    </Box>
+  )
 }
 
-export default Home;
+export default Home
