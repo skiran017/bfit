@@ -5,9 +5,8 @@ import { BODY_PARTS_API_URL, EXERCISES_API_URL } from '../utlis/constants'
 import { exerciseOptions, fetchData } from '../utlis/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 
-function SearchExercises({ bodyPart, setBodyPart }: any) {
+function SearchExercises({ bodyPart, setBodyPart, setExercises }: any) {
   const [searchInput, setSearchInput] = useState('')
-  const [exercises, setExercises] = useState('')
   const [bodyParts, setBodyParts] = useState<any>([])
 
   useEffect(() => {
