@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react'
 
 import { BODY_PARTS_API_URL, EXERCISES_API_URL } from '../utlis/constants'
 import { exerciseOptions, fetchData } from '../utlis/fetchData'
+import HorizontalScrollbar from './HorizontalScrollbar'
 
-function SearchExercises() {
+function SearchExercises({ bodyPart, setBodyPart }: any) {
   const [searchInput, setSearchInput] = useState('')
   const [exercises, setExercises] = useState('')
   const [bodyParts, setBodyParts] = useState<any>([])
@@ -80,7 +81,9 @@ function SearchExercises() {
           Search
         </Button>
       </Box>
-      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>HorizontalScrollbar</Box>
+      <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
+        <HorizontalScrollbar data={bodyParts} bodyParts setBodyPart={setBodyPart} bodyPart={bodyPart} />
+      </Box>
     </Stack>
   )
 }
