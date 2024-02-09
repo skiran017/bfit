@@ -1,8 +1,8 @@
 import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 
-import { BODY_PARTS_API_URL, EXERCISES_API_URL } from '../utlis/constants'
-import { exerciseOptions, fetchData } from '../utlis/fetchData'
+import { BODY_PARTS_API_URL, EXERCISES_API_URL } from '../utils/constants'
+import { exerciseOptions, fetchData } from '../utils/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 
 function SearchExercises({ bodyPart, setBodyPart, setExercises }: any) {

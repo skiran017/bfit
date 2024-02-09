@@ -2,7 +2,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import Pagination from '@mui/material/Pagination'
 import React, { useEffect, useState } from 'react'
 
-import { exerciseOptions, fetchData } from '../utlis/fetchData'
+import { exerciseOptions, fetchData } from '../utils/fetchData'
 import ExerciseCard from './ExerciseCard'
 
 const Exercises = ({ exercises, setExercises, bodyPart }: any) => {
